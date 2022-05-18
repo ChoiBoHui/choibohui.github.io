@@ -1,0 +1,38 @@
+.section01 {
+    padding: 100px 0;
+    background: #eee;
+    text-align: center;
+}
+
+.section01 h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 12px 0;
+}
+
+.section01 p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 40px 0;
+}
+
+.section01 .container {
+    display: flex;
+    gap: 20px;
+    width: 1200px;
+    margin: auto;
+}
+
+.section01 .container figure {
+    flex: 1;
+    height: 190px;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section01 .container #cat_01 {background-image: url(../img/cat_01.jpg);}
+.section01 .container #cat_02 {background-image: url(../img/cat_02.jpg);}
+.section01 .container #cat_03 {background-image: url(../img/cat_03.jpg);}
+.section01 .container #cat_04 {background-image: url(../img/cat_04.jpg);}
