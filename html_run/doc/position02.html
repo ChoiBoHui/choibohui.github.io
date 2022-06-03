@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            color: #000;
+            text-align: center;
+            line-height: 100vh;
+        }
+
+        header {
+            background: #f00;
+        }
+
+        main {
+            background: #ff0;
+        }
+
+        footer {
+            background: #00f;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container figure {
+            flex: 1;
+            line-height: 1.4;
+        }
+
+        .container figure:nth-child(2) {
+            background: #333;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky">
+        header
+    </header>
+    <main class="sticky">
+        main
+    </main>
+    <section class="sticky">
+        <div class="container">
+            <figure>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque provident repudiandae ex sint at. Vel
+                aliquam a vitae nam repellendus saepe molestias voluptates reiciendis, ipsa, asperiores harum provident
+                velit culpa unde suscipit perferendis autem dolores temporibus at? Reprehenderit quas mollitia ratione
+                soluta consequatur voluptatibus, placeat perferendis aperiam assumenda quibusdam aspernatur sed voluptas
+                perspiciatis in beatae laboriosam unde sunt nihil. Explicabo veritatis officia quo voluptatibus
+                necessitatibus earum et ex eum! Similique eius voluptatem, dolorum totam reiciendis nam ea deserunt
+                sapiente facilis dicta, reprehenderit laudantium iste blanditiis debitis sint culpa! Ipsa unde esse
+                similique hic totam dolor quibusdam quos omnis nobis odio enim, at deleniti aut temporibus debitis
+                eligendi labore assumenda iure perferendis rem placeat sed! Velit aut porro dignissimos expedita quia
+                dolorum quae deleniti iusto eaque exercitationem modi quo minus maxime aperiam, assumenda optio
+                voluptate vero distinctio! Ducimus incidunt excepturi architecto voluptatum cum laudantium esse deserunt
+                eos laboriosam consectetur, ratione quod? Repudiandae, unde! Autem distinctio adipisci magnam voluptate
+                animi. Tempora facilis ut iusto maiores atque provident modi dolor? Earum repudiandae voluptatibus,
+                fugiat voluptas ad maxime aperiam deserunt, at voluptates reiciendis impedit rerum repellendus maiores
+                saepe! Quibusdam facilis ipsam neque dolor consectetur asperiores! Ipsa nemo reiciendis aspernatur?
+                Magni quae perspiciatis voluptatum laborum.
+            </figure>
+            <figure>
+
+            </figure>
+        </div>
+    </section>
+    <footer class="sticky">
+        footer
+    </footer>
+</body>
+
+</html>
