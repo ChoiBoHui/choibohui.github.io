@@ -62,16 +62,13 @@ $(function () {
     });
 
     $('.tab_menu li').on('click', function (event) {
-        evnet.preventDefault();
+        event.preventDefault();
         // console.log($(this), $(this).index(), event.target, event.currentTarget);
         $('.tab_menu li').removeClass('on');
         $(this).addClass('on');
         var idx = $(this).index(); //0,1,2
         $('.tab_content>div').removeClass('on');
         $('.tab_content>div').eq(idx).addClass('on');
-
-        $('.right_content>li').removeClass('on');
-        $('.right_content>li').eq(idx).addClass('on');
     });
 
     var ux = "나와야함";
