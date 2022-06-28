@@ -65,15 +65,13 @@ h1 img {
 
 .main_slider figure {
     position: relative;
-    /* height: 967px; */
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
 }
 
 .main_slider .itm01 {
     background-image: url(../img/main_visual_01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center/cover;
+    height: 100vh;
 }
 
 .main_slider .inner {
