@@ -109,7 +109,7 @@ h3 { font-size: 24px; font-weight: 800; color: var(--black); }
 
 .parkrise .text_wrap { position: relative; width: 140rem; margin: 0 auto; } 
 .parkrise .text .btn { position: absolute; top: 0; left: 18.3%; padding: 114px 178px; } 
-.parkrise .text button {box-sizing: border-box; background: #fff; font-family: apple; font-size: 16px; font-weight: 700; color: var(--w_light-gray); padding: 8px 24px 6px 24px; outline: 1px solid var(--w_light-gray); border: none; transition: 0.5s; } 
+.parkrise .text button {box-sizing: border-box; background: #fff; font-family: apple; font-size: 16px; font-weight: 700; color: var(--w_light-gray); padding: 8px 24px 6px 24px; outline: 1px solid var(--w_light-gray); border: none; transition: 0.5s; cursor: pointer; } 
 .parkrise .text button:hover { color: var(--black); outline: 1px solid var(--black);}
 
 .parkrise .body_text { position: absolute; top: 271px; left:0; width: 254px; padding: 40px 24px; } 
