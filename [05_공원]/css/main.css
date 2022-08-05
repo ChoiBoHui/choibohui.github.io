@@ -6,7 +6,7 @@ html { font-size: 10px; }
 body { overflow-x: hidden; } 
 h2 { font-size: 32px; font-weight: 800; color: var(--black); } 
 h3 { font-size: 24px; font-weight: 800; color: var(--black); } 
-/* .wrap { margin: 0 40px; }  */
+/* .wrap { margin: 0 40px; } */
 .container { width: 140rem; margin: 0 auto; } 
 
 /* header START */
@@ -72,7 +72,7 @@ h3 { font-size: 24px; font-weight: 800; color: var(--black); }
 .intro_site .intro_slider .inner p { font-size: 16px; font-weight: 300; margin: 0 0 4px 0; } 
 
 /* magazine START */
-.magazine { margin: 0 40px;} 
+.magazine { margin: 0 40px; } 
 
 /* main_magazine START */
 .main_magazine { display: flex; margin: 0 0 80px 0; } 
@@ -88,7 +88,7 @@ h3 { font-size: 24px; font-weight: 800; color: var(--black); }
 .sub_magazine { } 
 .sub_magazine h3 { margin: 0 0 40px 0; text-indent: -1px; } 
 .sub_magazine h3::after { content: ""; display: block; width: 178px; height: 2px; background: var(--black); margin: 2px 0 0 0; } 
-.sub_magazine ul { display: flex; margin: 0 0 12rem 0; justify-content: space-between; } 
+.sub_magazine ul { display: flex; margin: 0 0 14rem 0; justify-content: space-between; } 
 /* .sub_magazine ul li figure { background: #000; } */
 .sub_magazine ul li .mgz_img { width: 100%; transition: box-shadow 0.5s; } 
 .sub_magazine ul li .mgz_img:hover { box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.24); } 
@@ -97,16 +97,26 @@ h3 { font-size: 24px; font-weight: 800; color: var(--black); }
 .sub_magazine p { font-size: 16px; font-weight: 400; color: var(--w_dark-gray); margin: 0 0 11px 0; } 
 
 /* parkrise START */
-.parkrise { margin: 0 0 12rem 0;} 
-.parkrise .title { width: 140rem; margin: 0 auto 4rem auto;}
+.parkrise { position: relative; margin: 0 0 12rem 0; } 
+.parkrise .title { width: 140rem; margin: 0 auto 4rem auto; } 
 .parkrise .title::after { content: ""; display: block; width: 190rem; height: 2px; background: var(--black); margin: 2px 0 0 0; } 
-.parkrise .title p {display: inline-block; font-size: 22px; font-weight: 400;}
-.parkrise figure img {width: 1863px; margin: 0 0 0 40px;}
+.parkrise .title p { display: inline-block; font-size: 22px; font-weight: 400; } 
+.parkrise figure img { width: 1863px; margin: 0 0 0 40px; } 
 
+.parkrise .text { } 
+.parkrise .text .sub_tit { width: 140rem; margin: 0 auto; } 
+.parkrise .text .sub_tit h3 { width: 257px; font-size: 18px; font-weight: 700; text-align: center; margin: 0 0 16px 0; } 
 
+.parkrise .text_wrap { position: relative; width: 140rem; margin: 0 auto; } 
+.parkrise .text .btn { position: absolute; top: 0; left: 18.3%; padding: 114px 178px; } 
+.parkrise .text button {box-sizing: border-box; background: #fff; font-family: apple; font-size: 16px; font-weight: 700; color: var(--w_light-gray); padding: 8px 24px 6px 24px; outline: 1px solid var(--w_light-gray); border: none; transition: 0.5s; } 
+.parkrise .text button:hover { color: var(--black); outline: 1px solid var(--black);}
 
-
-
+.parkrise .body_text { position: absolute; top: 271px; left:0; width: 254px; padding: 40px 24px; } 
+.parkrise .body_text .tit { font-size: 16px; font-weight: 700; margin: 0 0 8px 0; } 
+.parkrise .body_text .tit p { display: inline-block; font-size: 16px; font-weight: 400; } 
+.parkrise .body_text p { font-size: 14px; font-weight: 300; line-height: 26px; } 
+/* .parkrise .text a { position: absolute; top: 0; left: 0; } */
 
 
 /* footer START */
