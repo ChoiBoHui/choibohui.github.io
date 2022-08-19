@@ -164,11 +164,12 @@ body.on .header .back_drop { opacity: 1; }
 
 /* Main Visual START */
 .main_visual { position: relative; overflow-x: hidden; padding: 4rem; margin: 0 0 8.0rem 0; text-align: center; } 
-.main_visual h2 { font-size: 6rem; font-weight: 800; color: var(--black); letter-spacing: -0.1rem; margin: 8rem 0 2.6rem 0; } 
+.main_visual h2 { display: block; font-size: 5.4rem; font-weight: 800; color: var(--black); letter-spacing: -0.1rem; margin: 8rem 0 2.6rem 0; } 
 .main_visual h2 span { display: block; margin: 8px 0 0 0; } 
-.main_visual p { font-size: 2.0rem; margin: 0 0 6rem 0; } 
-.main_visual .btn a { transition: opacity 0.3s; } 
-.main_visual .btn a:hover { opacity: 0.6; } 
+.main_visual p { display: block; font-size: 2.0rem; margin: 0 0 6rem 0; } 
+.btn {display: flex; gap: 6px;}
+.main_visual .btn a { transition: none; } 
+.main_visual .btn a:hover { opacity: 1; } 
 
 
 
