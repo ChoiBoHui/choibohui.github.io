@@ -1,4 +1,4 @@
-* { outline: 1px solid #f00; } 
+/* * { outline: 1px solid #f00; } */
 
 :root { --black : #1d1d1f; --br_gray: #f5f5f7; --w_light-gray : #979797; --w_dark-gray : #464646; --w_light-black : #5c5c5c; --dark_gray : #4d4d4d; --d_white : #efefef; --d_light-gray : #999999; --d_dart-gray : #4d4d4d; --blue : #06c; --bg : #fbfbfc; } 
 
