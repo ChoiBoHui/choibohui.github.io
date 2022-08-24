@@ -1,0 +1,34 @@
+Monet 작품 전시/소개 사이트
+구글 : 마르모탕 모네 미술관 (Musée Marmottan Monet)
+모네 미술관 사이트 : https://www.marmottan.fr/
+디자인 레퍼런스 : https://notefolio.net/sunzu-zin/316266
+=
+다운로드 사이트
+1) https://commons.wikimedia.org/w/index.php?search=monet&title=Special:MediaSearch&go=Go&type=image
+2) https://artvee.com/main/?s=monet&tc=pd
+3) https://www.artic.edu/search/artworks?q=monet
+4) https://artsandculture.google.com/search?q=monet&hl=ko
+=
+
+body : background 컬러를 그레이로 사용.
+color 는 블랙, 그레이 만
+음향(bgm) : https://heeya1004.tistory.com/144
+"게르테나전에 오신것을 환영합니다."
+transition : delay ? 흠.. 이거는 로딩 다 되면 페이지가 나오게 하는거 알아봐야 할듯?
+스크롤하면 이미지가 바뀌는 슬라이더로 넣을 것, 그런데 이제 오토 안되게 + 페이드 인아웃 + 이미지 규격이 본인 100% 로 나오게, not cover
+
+메인 페이지 : 
+로고
+이미지(스크롤 시 전환) : 멀리서 보는 것 처럼 엄청 작게
+**푸터 없음
+
+-> 이미지 클릭 => 화면 전환
+=> 우측으로 페이지가 밀림 => view를 right 0 에서 right -90vh 로 밀어야 할듯?
+
+우측 페이지 : 
+로고 헤더부분 그대로
+작품 이미지 : overflow: auto; 해서 스크롤은 안보이고, 아래 내용이 계속 된다는 표현을 위해서 그림자를 white 그라데이션으로 덮으면 좋을듯?
+하단에 설명 ( 작품제목 / 년도 / 설명 ) : 글자는 화면이 완전히 전환된 이후에 나타나게
+
+-> 좌측으로 밀려있는 슬라이더(약간은 보임)를 클릭하면 다시 toggle 되면서 => 슬라이드가 메인 자리로 이동함.
+-> 이하 다른 이미지들 작동 동일
