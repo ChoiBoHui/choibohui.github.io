@@ -46,7 +46,7 @@ h3 { font-size: 24px; font-weight: 800; color: var(--black); }
 /* .swiper { width: auto; height: 80vh; } */
 /* .swiper figure { height: calc(100vh - 100px); background: url(../img/pic/Woman\ with\ a\ Parasol.jpg) no-repeat center center/contain; } 
 .swiper figure { } */
-.swiper figure a { display: block; width: 100vw; height: calc(100vh - 100px); background: url(../img/pic/Woman\ with\ a\ Parasol.jpg) no-repeat center center/contain; margin: 0 auto; } 
+.swiper figure a { display: block; width: 100vw; height: calc(100vh - 100px); background: url(../img/pic/Woman-with-a-Parasol.jpg) no-repeat center center/contain; margin: 0 auto; } 
 
 
 /* 모바일 메뉴 */
