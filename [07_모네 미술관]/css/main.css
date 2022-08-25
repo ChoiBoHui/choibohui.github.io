@@ -39,8 +39,8 @@ body { overflow: hidden; background: var(--bg); }
 
 /* 메뉴 열렸을때 바깥 bg 블러blur 효과 */
 /* .header .back_drop { height: 100vh; width: 100vw; top: 0; left: 0; position: fixed; backdrop-filter: blur(4px); pointer-events: inherit; background-color: rgba(255, 255, 255, 0.9); opacity: 0; transition: opacity 0.5s; z-index: -1; } */
-.back_drop { height: 100vh; width: 100vw; top: 0; left: 0; position: fixed; opacity: 0; transition: opacity 0.5s; z-index:1; backdrop-filter: blur(33px); background-blend-mode: overlay; background-color: rgba(251, 251, 252, 0.7);} 
-.back_drop.on { opacity: 1; } 
+.back_drop { height: 100vh; width: 100vw; top: 0; left: 0; position: fixed; display: none; z-index:1; -ms-backdrop-filter: blur(33px);-webkit-backdrop-filter: blur(33px);-moz-backdrop-filter: blur(33px);-o-backdrop-filter: blur(33px);backdrop-filter: blur(33px); background-blend-mode: overlay; background-color: rgba(251, 251, 252, 0.7);} 
+.back_drop.on { display: block; } 
 
 
 
