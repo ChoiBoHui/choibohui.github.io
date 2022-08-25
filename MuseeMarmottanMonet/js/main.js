@@ -4,6 +4,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector(".menu-container");
     const gnb = document.querySelector(".gnb");
     const bgblur = document.querySelector(".back_drop");
+    const gallery = document.querySelector(".gallery");
+    const pic = document.querySelector(".gallery a");
+    const guide = document.querySelector(".guide");
 
     menu.addEventListener("click", () => {
         menu.classList.toggle("active");
@@ -17,6 +20,11 @@ window.addEventListener('DOMContentLoaded', () => {
         bgblur.classList.remove("on");
     });
 
+    // 메인 컨텐츠
+    pic.addEventListener("click", () => {
+        gallery.classList.toggle("push");
+        guide.classList.toggle("push");
+    });
 
 
 
