@@ -44,37 +44,26 @@ body { overflow: hidden; background: var(--bg); }
 /* Main START */
 
 /* Main Visual START */
-/* .main_visual { position: relative; overflow: hidden; } */
-/* .main_visual .container { } */
+.main_visual { position: relative; overflow: hidden; } 
+/* .main_visual .container { }  */
 
 /* 그림 부분 시작 */
-/* .gallery { width: 100%; transition: width 0.75s; } 
+.gallery { width: 100%; transition: width 0.75s; } 
 .gallery.push { width: 60%; } 
-.gallery figure { margin: 0 auto; height: calc(100vh - 2rem); padding: 10rem 0; } 
-.gallery figure a { display: block; width: 100%; height: 100%; background: url(../img/pic/Woman-with-a-Parasol.jpg) no-repeat center center/contain; } 
-.gallery figure a:hover { cursor : url(../img/guide_cursor.cur) 48 48; } */
+.gallery figure { margin: 0 auto; padding: 10rem 0; } 
+.gallery figure a { display: block; width: 100%; height: calc(100ch - 2rem); background: url(../img/pic/Woman-with-a-Parasol.jpg) no-repeat center center/contain; } 
+.gallery figure a:hover { cursor : url(../img/guide_cursor.cur) 48 48; } 
 /* .. 왜 안나올까나.. 일단 패스.. */
 
 
 
 /* 우측 설명글 시작 */
-/* .guide { position: absolute; top: 50%; right: -50%; transform: translateY(-50%); width: 40%; font-size: 3rem; padding: 2rem; transition: right 0.75s; } 
-.guide.push { right: 0; } */
+.guide { position: absolute; top: 50%; right: -50%; transform: translateY(-50%); width: 40%; font-size: 3rem; padding: 2rem; transition: right 0.75s; } 
+.guide.push { right: 0; } 
 
 
 
-/* Main Visual START 모바일 */
-.main_visual { position: relative; overflow: hidden; } 
 
-/* 그림 부분 시작 */
-.gallery { width: 100%; transition: 0.75;} 
-.gallery.push { width: 100%; } 
-.gallery figure {  height: 100vh; padding: 5.8rem 0; margin: 0 auto auto auto; } 
-.gallery figure a { display: block; width: 100%; height: 100%; background: url(../img/pic/Woman-with-a-Parasol.jpg) no-repeat center center/contain; } 
-
-/* 우측 설명글 시작 모바일 */
-.guide { position: absolute; bottom: -40%; right: inherit; left: 50%; transform: translateX(-50%); width: 100%; height: 40%; font-size: 2.4rem; padding: 2rem; background: linear-gradient(transparent, #fbfbfc 40%); opacity: 0; transition: bottom 0.75s, opacity 0.75s 0.25s; } 
-.guide.push {bottom: 0; opacity: 1; } 
 
 
 
@@ -93,4 +82,19 @@ body { overflow: hidden; background: var(--bg); }
 @media (max-width:768px) { /* body.on { position: fixed; overflow: hidden; touch-action: none; } */
 
 .header h1 { width: 180px; margin: 0 auto auto 2rem; } 
+
+/* Main Visual START 모바일 */
+.main_visual { position: relative; overflow: hidden; } 
+
+/* 그림 부분 시작 */
+.gallery { width: 100%; transition: 0.75;} 
+.gallery.push { width: 100%; } 
+.gallery figure {  height: 100vh; padding: 5.8rem 0; margin: 0 auto auto auto; } 
+.gallery figure a { display: block; width: 100%; height: 90%; background: url(../img/pic/Woman-with-a-Parasol.jpg) no-repeat center center/contain; transition: 0.75s; } 
+.gallery.push figure a { height: 76%;} 
+
+/* 우측 설명글 시작 모바일 */
+.guide { position: absolute; top: inherit; bottom: -100%; right: 0; left: 0; transform: translateX(-50%), translateY(-50%); width: 100%; height: 40%; font-size: 2.4rem; padding: 2rem; background: linear-gradient(transparent, #fbfbfc 40%); opacity: 0; transition: bottom 0.75s, opacity 0.75s } 
+.guide.push {bottom: -20%; opacity: 1; right: inherit;} 
+
 }
