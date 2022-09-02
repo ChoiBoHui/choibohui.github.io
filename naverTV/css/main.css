@@ -1,0 +1,81 @@
+/* * { outline: 1px solid var(--mc-light); } */
+
+/* :root { --black : #1d1d1f; --br_gray: #f5f5f7; --w_light-gray : #979797; --w_dark-gray : #464646; --w_light-black : #5c5c5c; --dark_gray : #4d4d4d; --d_white : #efefef; --d_light-gray : #999999; --d_dart-gray : #4d4d4d; --blue : #06c; --bg : #fbfbfc; } */
+:root { --mc-light : #00de7b; --mc-dusty : #00ca70; --mc-gradiant1 : #00ba6e; --red-light : #ff0031; --red-dusty : #ff4e4e; --red-dark : #ea333c; --gray-light : #ededed; --gray-dusty : #b6b6b6; --gray-dark : #b2b2b2; --black-dark : #1d1d1f; --black-bg: #2e2e2f; } 
+
+html { font-size: 10px; color: #fff; } 
+body { overflow-x: hidden; background: #000; } 
+.container { display: flex; margin: 0 auto; } 
+/* .wrap { } */
+/* !------------------ 이 위로 공통 적용 style ------------------! */
+
+
+/* !------------------ 헤더 시작 ------------------! */
+.Header .container { position: fixed; top: 0; left: 0; right: 0; background: var(--black-bg); padding: 1rem 2rem; box-shadow: 0 0 12px rgba(0, 0, 0, 0.5); z-index: 1; } 
+.Header .menu button { font-size: 21px; border: none; outline: none; background: transparent; color: var(--mc-light); padding: 11px 10px 10px 0; cursor: pointer; } 
+.Header h1 { width: 150px; padding: 10px; } 
+
+/* 좌측 세로 메뉴 */
+.gnb { position: fixed; top: 65px; left: 0; background: var(--black-bg); font-size: 14px; height: 100%; overflow-x: hidden; overflow-y: auto; transition: 0.5s; } 
+/* .gnb.open { width: 220px; } */
+
+/* transiwion 줘서 글자가 서서히 없어지게 하려고 했더니 한글은 아래로 떨어지고 영문은 overflow: hidden; 이 먹는다....... */
+.gnb ul { width: 60px; } 
+.gnb .toHome { color: var(--mc-light); } 
+.gnb.open ul { width: 220px; } 
+.gnb ul .textHide { display: none; } 
+.gnb.open ul .textHide { display: block; } 
+.gnb>ul>li:hover { background: rgba(255, 255, 255, 0.04); } 
+.gnb a { display: flex; padding: 14px 22px; } 
+.gnb>ul>li>a>i:first-child { display: inline-block; margin-right: 10px; } 
+/* gnb 드랍다운 버튼 시작 */
+/* .gnb .dropDownBtn { position: absolute; display: inline-block; top: 0; right: 0; padding: 15px; font-size: 12px; } 
+.gnb .dropDownBtn::after { content: ""; position: absolute; top: 50%; right: 50%; transform: translate(50%, -50%); background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; transition: 0.3s; padding: 0; } 
+.gnb .dropDownBtn:hover::after { padding: 16px; } 
+.gnb .dropDownBtn.open { transform: rotate(180deg); } */
+/* gnb 드랍다운 버튼 끝 인데 오류가 있어서 보류 */ 
+
+/* myMenu 드랍다운 시작!! */
+.gnb .myMenu { border-top: 1px solid var(--black-dark); } 
+.gnb .myMenu a { position: relative; display: flex; } 
+.gnb .myMenu .dropDownBtn { position: absolute; display: inline-block; top: 0; right: 0; padding: 15px; font-size: 12px; } 
+.gnb .myMenu .dropDownBtn::after { content: ""; position: absolute; top: 50%; right: 50%; transform: translate(50%, -50%); background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; transition: 0.3s; padding: 0; }
+.gnb .myMenu .dropDownBtn:hover::after { padding: 16px; } 
+.gnb .myMenu .dropDownBtn.open { transform: rotate(180deg); }  
+.gnb .myMenu .dropDownCon { overflow: hidden; height: 0; transition: height 0.4s; } /* 메뉴가 늘어나면 transition 때문에 height값을 수정해야함, 그래서 네이버는 transition을 안쓰는듯 */
+.gnb .myMenu .dropDownCon.open { height: calc(84px + 14px); } 
+.gnb .myMenu .dropDownCon li a { padding: 7px 20px 8px 44px; font-size: 13px; font-weight: 400; color: var(--gray-dusty); transition: color 0.2s; } 
+.gnb .myMenu .dropDownCon li a:hover { color: #ededed; } 
+/* 드랍다운 버튼/콘텐츠는 gnb 전역에서 쓰이기 때문에 상단 공용 스타일로 수정 이동 했으나 오류가 생겨서 우선 각각 써줬음 */
+
+
+/* 지엔비 배너 */
+.gnb .gnbBanner a { font-size: 0; padding: 0; } /* 나중에 캡션 처리하듯이 스크린 리더기에 읽히게 다시 처리 */
+
+
+/* 구독시작 */
+.gnb .subscribe * { display: block; } 
+.gnb .subscribe { padding: 0 0 14px 44px; font-size: 13px; font-weight: 300; } 
+.gnb .subscribe>div { padding-bottom: 6px; text-indent: 1px; color: var(--gray-dusty); } 
+.gnb .subscribe>div:nth-child(2) { padding-bottom: 12px; } 
+.gnb .subscribe .btn { border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.2); padding: 8px 12px 9px 12px; display: inline-block; background: rgba(255, 255, 255, 0.05); transition: 0.3s; } 
+.gnb .subscribe .btn:hover { color: var(--mc-light); border: 1px solid var(--mc-light); background: var(--black-bg); } 
+
+/* 테마시잦ㄱ */
+.gnb .themaBox { border-bottom: 1px solid var(--black-dark); } 
+.gnb .themaBox a { position: relative; display: flex; } 
+.gnb .themaBox .dropDownBtn { position: absolute; display: inline-block; top: 0; right: 0; padding: 15px; font-size: 12px; } 
+.gnb .themaBox .dropDownBtn::after { content: ""; position: absolute; top: 50%; right: 50%; transform: translate(50%, -50%); background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; transition: 0.3s; padding: 0; }
+.gnb .themaBox .dropDownBtn:hover::after { padding: 16px; } 
+.gnb .themaBox .dropDownBtn.open { transform: rotate(180deg); }  
+.gnb .themaBox .dropDownCon { overflow: hidden; height: 0; transition: height 0.4s; } /* 메뉴가 늘어나면 transition 때문에 height값을 수정해야함, 그래서 네이버는 transition을 안쓰는듯 */
+.gnb .themaBox .dropDownCon.open { height: calc(84px + 14px); } 
+.gnb .themaBox .dropDownCon li a { padding: 7px 20px 8px 44px; font-size: 13px; font-weight: 400; color: var(--gray-dusty); transition: color 0.2s; } 
+.gnb .themaBox .dropDownCon li a:hover { color: #ededed; } 
+
+
+
+/* roading 시작 */
+.roading { color: var(--mc-light); font-size: 56px; text-align: center; margin: 0 auto; padding: 300px; } 
+.xi-spinner-5 { animation: xi-spin 2s infinite linear; }
+.roading .text { font-size: 11px; color: rgba(255, 255, 255, 0.3); } 
