@@ -1,0 +1,52 @@
+$mainColor : #f00;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.PF {
+    color: $mainColor;
+
+    .gnb {
+        position: fixed;
+        top: 50%;
+        right: 5rem;
+        transform: translateY(-50%);
+        width: 3rem;
+        z-index: 999;
+    }
+
+    li {
+        font-size: 0;
+        position: relative;
+        height: 2rem;
+
+        a {
+            display: block;
+            height: 2rem;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 1px;
+                background: $mainColor;
+                transition: width 0.5s;
+            }
+        }
+    }
+
+    li.on {
+        a {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
